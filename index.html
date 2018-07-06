@@ -1,43 +1,566 @@
-<!doctype html>
-<html lang="en-us">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>JFleck91</title>
-  <link rel="stylesheet" type="text/css" href="reset.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Jacob Fleck</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Resume</a>
-      </nav>
-    </div>
-  </header>
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>About Me</h1>
-      <img src="images/portfoliopic.jpg" class="auth-image" alt="Your Name">
-      <p>My name is Jacob Fleck. I'm currently a customer service rep at Safelite AutoGlass. Over the past six years I've worked in high volume call centers such as Humana, United Healthcare, and Bank of America. Prior to that I worked for Enterprise and Walmart. </p>
-      <p>At this time I'm currently enrolled in a full stack web developement program through the University of Arizona coding bootcamp. After completing this program, I look forward to using my skills to start a new career in the tech industry.</p>
-      <p>In my spare time I enjoy going offroading, collecting coins, and playing video games. For more information about me, please review this site and also see my LinkedIn and Github pages. Thank you for visiting.</p>
-    </section>
-    <section class="sidebar">
-      <div id="connect">
-        <h2>Connect with Me</h2>
-        <a href="https://github.com/jfleck91"><img src="images/github-128.png" class="social" alt="GitHub" /></a>
-        <a href="https://www.linkedin.com/in/jacob-fleck-b67469155/"><img src="images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
-        
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <title>Unique - Responsive vCard Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Unique - Responsive vCard Template" />
+    <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, Unique, portfolio" />
+    <meta name="author" content="lmtheme" />
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link rel="stylesheet" href="css/transition-animations.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+  </head>
+
+  <body>
+    <!-- Loading animation -->
+    <div class="preloader">
+      <div class="preloader-animation">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
       </div>
-    </section>
-  </div>
-  <footer>
-    <div class="container">
     </div>
-  </footer>
-</body>
+    <!-- /Loading animation -->
+
+    <div id="page" class="page template-style-dark">
+      <!-- Header -->
+      <header id="site_header" class="header mobile-menu-hide header-color-dark">
+        <div class="my-photo tilt-effect">
+          <img src="images/portfoliopic.jpg" alt="image">
+        </div>
+
+        <div class="site-title-block">
+          <h1 class="site-title">Jacob Fleck</h1>
+        </div>
+
+        <!-- Navigation -->
+        <div class="site-nav">
+          <!-- Main menu -->
+          <ul id="nav" class="site-main-menu">
+            <li>
+              <a class="pt-trigger" href="#home" data-animation="21"><i class="menu-icon pe-7s-icon pe-7s-home"></i>Home</a><!-- href value = data-id without # of .pt-page. -->
+            </li>
+            <li>
+              <a class="pt-trigger" href="#about_me" data-animation="17"><i class="menu-icon pe-7s-icon pe-7s-user"></i>About me</a>
+            </li>
+            <li>
+              <a class="pt-trigger" href="#resume" data-animation="18"><i class="menu-icon pe-7s-icon pe-7s-id"></i>Resume</a>
+            </li>
+            <li>
+              <a class="pt-trigger" href="#portfolio" data-animation="19"><i class="menu-icon pe-7s-icon pe-7s-portfolio"></i>Portfolio</a>
+            </li>
+           <!--
+            <li>
+              <a class="pt-trigger" href="#contact" data-animation="20"><i class="menu-icon pe-7s-icon pe-7s-mail"></i>Contact</a>
+            </li>
+          -->
+          </ul>
+          <!-- /Main menu -->
+        </div>
+        <!-- Navigation -->
+      </header>
+      <!-- /Header -->
+
+      <!-- Mobile Header -->
+      <div class="mobile-header mobile-visible">
+        <div class="mobile-logo-container">
+          <div class="mobile-site-title">Jacob Fleck</div>
+        </div>
+
+        <a class="menu-toggle mobile-visible">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <!-- /Mobile Header -->
+
+      <!-- Main Content -->
+      <div id="main" class="site-main">
+        <!-- Page changer wrapper -->
+        <div class="pt-wrapper" style="background-image: url(images/server.jpg);">
+          <!-- Subpages -->
+          <div class="subpages">
+
+            <!-- Home Subpage -->
+            <section class="pt-page pt-page-1 section-without-bg section-paddings-0 table" data-id="home">
+              <div class="section-inner">
+                <div class="home-page-block">
+                  <h2>Jacob Fleck</h2>                                  
+                    <div class="item">
+                      <p class="home-page-description">Web Developer</p>
+                    </div>
+                </div>
+              </div>
+            </section>
+            <!-- End of Home Subpage -->
+
+            <!-- About Me Subpage -->
+            <section class="pt-page pt-page-2" data-id="about_me">
+              <div class="border-block-top-110"></div>
+              <div class="section-inner">
+                <div class="section-title-block">
+                  <div class="section-title-wrapper clearfix">
+                    <h2 class="section-title">About Me</h2>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-6 col-md-6 col-lg-4 subpage-block">
+                    <div class="my-photo-block tilt-effect">
+                      <img src="images/portfoliopic.jpg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-6 col-lg-4">
+                    <p>My name is Jacob Fleck. I'm currently a customer service rep at Safelite AutoGlass. Over the past six years I've worked in high volume call centers such as Humana, United Healthcare, and Bank of America. Prior to that I worked for Enterprise and Walmart.
+                      </p>
+                    <p>
+                        At this time I'm currently enrolled in a full stack web developement program through the University of Arizona coding bootcamp. After completing this program, I look forward to using my skills to start a new career in the tech industry.
+                    </p>
+                    <p>
+                        In my spare time I enjoy going offroading, collecting coins, and playing video games. For more information about me, please review this site and also see my LinkedIn and Github pages. Thank you for visiting.  
+                    </p>
+                  </div>
+
+                  <div class="col-sm-6 col-md-6 col-lg-4 subpage-block">
+                    <ul class="info-list">
+                      <li><span class="title">Age</span><span class="value">26</span></li>
+                      <li><span class="title">Residence</span><span class="value">United States, 85208</span></li>
+                      <li><span class="title">Address</span><span class="value">11142 E Catalina Ave, Mesa AZ</span></li>
+                      <li><span class="title">e-mail</span><span class="value"><a href="mailto:jacob@jhfleck.com">jacob@jhfleck.com</a></span></li>
+                      <li><span class="title">Phone</span><span class="value">1 480 370 7765</span></li>
+                    </ul>
+
+                    <ul class="social-links">
+                      <li><a class="tip social-button" href="#" title="Twitter"><i class="fa fa-linkedin"></i></a></li> <!-- Full list of social icons: http://fontawesome.io/icons/#brand -->
+                      <li><a class="tip social-button" href="#" title="Facebook"><i class="fa fa-github"></i></a></li>
+                      <!--<li><a class="tip social-button" href="#" title="last.fm"><i class="fa fa-lastfm"></i></a></li>-->
+                      <!--<li><a class="tip social-button" href="#" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>-->
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- End of About Me Subpage -->
+
+            <!-- Resume Subpage -->
+            <section class="pt-page pt-page-3" data-id="resume">
+              <div class="border-block-top-110"></div>
+              <div class="section-inner">
+                <div class="section-title-block">
+                  <div class="section-title-wrapper">
+                    <h2 class="section-title">Resume</h2>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-6 col-md-4 subpage-block">
+                    <div class="block-title">
+                      <h3>Education</h3>
+                    </div>
+                    <div class="timeline">
+                      <!-- Single event -->
+                      <div class="timeline-event te-primary">
+                        <h5 class="event-date">2010</h5>
+                        <h4 class="event-name">General Educational Development Diploma </h4>
+                        <span class="event-description">Central Arizona College</span>
+                      </div>
+                      <!-- Single event -->
+                      <div class="timeline-event te-primary">
+                        <h5 class="event-date">2018</h5>
+                        <h4 class="event-name">Certificate of Web Developent</h4>
+                        <span class="event-description">University of Arizona</span>
+                        <p>A 6 month Full Stack Web Development program comprised of teachings on html, css, javascript, jquery, ajax/api, firebase, node, sql, express, handelbars, sequalize, mongo, and react.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-4 subpage-block">
+                    <div class="block-title">
+                      <h3>Experience</h3>
+                    </div>
+                    <div class="timeline">
+                     <!-- Single event -->
+                        <div class="timeline-event te-primary">
+                            <h5 class="event-date">Dec 2017 - Current</h5>
+                            <h4 class="event-name">Independant Contractor</h4>
+                            <span class="event-description">Uber</span>
+                            <p>Provide rides to passengers while using own vehicle and online navigation</p>
+                          </div>
+                      <!-- Single event -->
+                      <div class="timeline-event te-primary">
+                        <h5 class="event-date">Aug 2017 - Nov 2017</h5>
+                        <h4 class="event-name">Customer Service Specialist</h4>
+                        <span class="event-description">Humana Pharmacy</span>
+                        <p>- Answer incoming calls from Medicare and commercial members for refills of their medication.</p>
+                        <p>
+                            - Assist members by answering benefits questions, tracking open orders, and processing payments</p>
+                            <p>
+                            - Input updates of member account details, address, and billing information.
+                            </p>
+                      </div>
+                      <!-- Single event -->
+                      <div class="timeline-event te-primary">
+                        <h5 class="event-date">Nov 2014 - Aug 2017</h5>
+                        <h4 class="event-name">Member Care Advocate</h4>
+                        <span class="event-description">United Healthcare</span>
+                        <p>- Service Medicaid members in multiple states by completing health risk assessments, preventative health reminders, and behavioral health referrals. Renew member coverage, complete data entry, and assist with general benefits information for members</p>
+                        <p>- Training of new hires, assist with technical support situations within department, and design/maintain department bulletin board
+                        </p>
+                      </div>
+                      <!-- Single event -->
+                      <div class="timeline-event te-primary">
+                        <h5 class="event-date">Nov 2012 - Oct 2014</h5>
+                        <h4 class="event-name">Fraud Analyst</h4>
+                        <span class="event-description">Bank Of America</span>
+                        <p> - Review incoming calls for potential fraudulent activities, and start filing process for fraud claims if unauthorized charges are present</p>
+                        <p> - Provide proper information to resolve all concerns, update demographic information, and account details</p>
+                        <p> - Assisted in Training of new hires, participated in various beta testing of systems, and project task forces </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-4 subpage-block">
+                    <div class="block-title">
+                      <h3>Personal Skills</h3>
+                    </div>
+                    <div class="skills-info">
+                      <h4>Customer Service</h4>                               
+                      <div class="skill-container">
+                        <div class="skill-percentage skill-0"></div>
+                      </div>
+
+                      <h4>Time Management</h4>
+                      <div class="skill-container">
+                        <div class="skill-percentage skill-1"></div>
+                      </div>
+
+                      <h4>Learning Aptitude / Adaptability to change</h4>
+                      <div class="skill-container">
+                        <div class="skill-percentage skill-0"></div>
+                      </div> 
+
+                    <h4>Multitasking</h4>
+                      <div class="skill-container">
+                        <div class="skill-percentage skill-1"></div>
+                    </div> 
+                  </div>
+
+                    <div class="block-title">
+                      <h3>Coding Skills</h3>
+                    </div>
+                    <div class="skills-info">
+                      <h4>HML5</h4>                               
+                      <div class="skill-container">
+                        <div class="skill-percentage skill-0"></div>
+                      </div>
+
+                      <h4>CSS3 / Bootstrap</h4>
+                      <div class="skill-container">
+                        <div class="skill-percentage skill-0"></div>
+                      </div>
+
+                      <h4>Javascript / jQuery</h4>
+                      <div class="skill-container">
+                        <div class="skill-percentage skill-2"></div>
+                      </div>
+
+                      <h4>My Sql</h4>
+                      <div class="skill-container">
+                        <div class="skill-percentage skill-7"></div>
+                      </div>
+
+                      <h4>Handelbars</h4>
+                      <div class="skill-container">
+                        <div class="skill-percentage skill-7"></div>
+                      </div>
+
+                      <h4>React</h4>
+                      <div class="skill-container">
+                        <div class="skill-percentage skill-7"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12 col-md-12">
+                    <div class="download-cv-block">
+                      <a class="button" target="_blank" href="https://docs.google.com/document/d/1p-KkLHYEEwUI5QlzcJxT4KjlLbpOfksDnwP-s2oMkEM/edit">Download CV</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- End Resume Subpage -->
+
+
+            <!-- Portfolio Subpage -->
+            <section class="pt-page pt-page-4" data-id="portfolio">
+              <div class="border-block-top-110"></div>
+              <div class="section-inner">
+                <div class="section-title-block">
+                  <div class="section-title-wrapper">
+                    <h2 class="section-title">Portfolio</h2>
+                  </div>
+                </div>
+
+                <!-- Portfolio Content -->
+                <div class="portfolio-content">
+                              
+                  <!-- Portfolio filter -->
+                  <ul id="portfolio_filters" class="portfolio-filters">
+                   
+                    <li class="active">
+                      <a class="filter btn btn-sm btn-link active" data-group="all">All</a>
+                    </li>
+        
+                    <li>
+                      <a class="filter btn btn-sm btn-link" data-group="Applications">Applications</a>
+                    </li>
+                  
+                    <li>
+                      <a class="filter btn btn-sm btn-link" data-group="Designs">Designs</a>
+                    </li>
+
+                    <li>
+                      <a class="filter btn btn-sm btn-link" data-group="Photography">Photography</a>
+                    </li>
+
+                  </ul>
+                  <!-- End of Portfolio filter -->
+
+                  <!-- Portfolio Grid -->
+                  <div id="portfolio_grid" class="portfolio-grid portfolio-masonry masonry-grid-3">
+
+                    <!-- Portfolio Item 1 -->
+                    <figure class="item" data-groups='["all", "Applications"]'>
+                      <a href="https://jfleck91.github.io/page-Turner/" title="Nulla Facilisi" class="lightbox mfp-iframe">
+                        <img src="images/portfolio/1.png" alt="">
+                        <div>
+                          <h5 class="name">PageTurner</h5>
+                          <small>Application</small>
+                          <i class="pe-7s-icon pe-7s-display2"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 1 -->
+                
+                    <figure class="item" data-groups='["all", "Applications"]'>
+                        <a href="https://immense-citadel-61856.herokuapp.com/index" title="Nulla Facilisi" class="lightbox mfp-iframe">
+                        <img src="images/portfolio/2.jpg" alt="">
+                        <div>
+                          <h5 class="name">Eat Da Burger</h5>
+                          <small>Application</small>
+                          <i class="pe-7s-icon pe-7s-display2"></i>
+                        </div>
+                      </a>
+                    </figure>
+
+                    <!-- Portfolio Item 4 -->
+                    <figure class="item" data-groups='["all", "Applications"]'>
+                        <a href="https://pure-depths-33321.herokuapp.com/" title="Nulla Facilisi" class="lightbox mfp-iframe">
+                        <img src="images/portfolio/4.jpg" alt="">
+                        <div>
+                          <h5 class="name">Friend Finder</h5>
+                          <small>Application</small>
+                          <i class="pe-7s-icon pe-7s-display2"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 4 -->
+ 
+
+                    <!-- Portfolio Item 4 -->
+                    <figure class="item" data-groups='["all", "Applications"]'>
+                        <a href="https://jfleck91.github.io/Week-4-Game/" title="Nulla Facilisi" class="lightbox mfp-iframe">
+                        <img src="images/portfolio/mari0-4.png" alt="">
+                        <div>
+                          <h5 class="name">Super jQuery World</h5>
+                          <small>Application</small>
+                          <i class="pe-7s-icon pe-7s-display2"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 4 -->
+
+                    <!-- Portfolio Item 5 -->
+                    <figure class="item" data-groups='["all", "Applications"]'>
+                        <a href="https://jfleck91.github.io/Trivia-Game/" title="Nulla Facilisi" class="lightbox mfp-iframe">
+                        <img src="images/portfolio/KITT.jpg" alt="">
+                        <div>
+                          <h5 class="name">Movie Car Trivia</h5>
+                          <small>Application</small>
+                          <i class="pe-7s-icon pe-7s-display2"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 5 -->
+
+                    <!-- Portfolio Item 6 -->
+                    <figure class="item" data-groups='["all", "Applications"]'>
+                        <a href="https://jfleck91.github.io/Psychic-Game/" title="Nulla Facilisi" class="lightbox mfp-iframe">
+                        <img src="images/portfolio/6.jpg" alt="">
+                        <div>
+                          <h5 class="name">Psychic Game</h5>
+                          <small>Application</small>
+                          <i class="pe-7s-icon pe-7s-display2"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 6 -->
+
+                    <!-- Portfolio Item 7 -->
+                    <figure class="item" data-groups='["all", "Applications"]'>
+                      <a href="https://jfleck91.github.io/clicky_game/" title="Nulla Facilisi" class="lightbox mfp-iframe">
+                        <img src="images/portfolio/7.jpg" alt="">
+                        <div>
+                          <h5 class="name">Clicky Game</h5>
+                          <small>Application</small>
+                          <i class="pe-7s-icon pe-7s-display2"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 7 -->
+
+                    <!-- Portfolio Item 8 -->
+                    <figure class="item" data-groups='["all", "Applications"]'>
+                      <a href="https://jfleck91.github.io/Train-/" title="Nulla Facilisi" class="lightbox mfp-iframe">
+                        <img src="images/portfolio/9.jpg" alt="">
+                        <div>
+                          <h5 class="name">Train Schedual</h5>
+                          <small>Application</small>
+                          <i class="pe-7s-icon pe-7s-display2"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 8 -->
+
+                  </div>
+                  <!-- /Portfolio Grid -->
+
+                </div>
+                <!-- /Portfolio Content -->
+              </div>
+            </section>
+            <!-- /Portfolio Subpage -->
+
+            <!-- Contact Subpage 
+            <section class="pt-page pt-page-5" data-id="contact">
+              <div class="border-block-top-110"></div>
+              <div class="section-inner">
+                <div class="section-title-block">
+                  <div class="section-title-wrapper">
+                    <h2 class="section-title">Contact</h2>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-6 col-md-6 subpage-block">
+                    <div class="block-title">
+                      <h3>Get in Touch</h3>
+                    </div>
+              
+                    <div class="contact-info-block">
+                      <div class="ci-icon">
+                        <i class="pe-7s-icon pe-7s-map-marker"></i>
+                      </div>
+                      <div class="ci-text">
+                        <h5>Mesa, AZ</h5>
+                      </div>
+                    </div>
+                    <div class="contact-info-block">
+                      <div class="ci-icon">
+                        <i class="pe-7s-icon pe-7s-mail"></i>
+                      </div>
+                      <div class="ci-text">
+                        <h5>jacob@jhfleck.com</h5>
+                      </div>
+                    </div>
+                    <div class="contact-info-block">
+                      <div class="ci-icon">
+                        <i class="pe-7s-icon pe-7s-call"></i>
+                      </div>
+                      <div class="ci-text">
+                        <h5>480 370 7765</h5>
+                      </div>
+                    </div>
+                    <div class="contact-info-block">
+                      <div class="ci-icon">
+                        <i class="pe-7s-icon pe-7s"></i>
+                      </div>
+                      <div class="ci-text">
+                        <h5></h5>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-6 subpage-block">
+                    <div class="block-title">
+                      <h3>Contact Form</h3>
+                    </div>
+                    <form id="contact-form" method="post" action="contact_form/contact_form.php">
+
+                      <div class="messages"></div>
+
+                      <div class="controls">
+                        <div class="form-group">
+                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Full Name" required="required" data-error="Name is required.">
+                            <div class="form-control-border"></div>
+                            <i class="form-control-icon pe-7s-user"></i>
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Email Address" required="required" data-error="Valid email is required.">
+                            <div class="form-control-border"></div>
+                            <i class="form-control-icon pe-7s-mail"></i>
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="form_message" name="message" class="form-control" placeholder="Message for Me" rows="4" required="required" data-error="Please, leave me a message."></textarea>
+                            <div class="form-control-border"></div>
+                            <i class="form-control-icon pe-7s-comment"></i>
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+                        <input type="submit" class="button btn-send" value="Send message">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </section>
+           End Contact Subpage -->
+
+          </div>
+        </div>
+        <!-- /Page changer wrapper -->
+      </div>
+      <!-- /Main Content -->
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/pages-switcher.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/jquery.shuffle.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/tilt.jquery.min.js"></script>
+    <script src="js/jquery.hoverdir.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
